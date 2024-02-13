@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/* MODULES */
+/* FONTS */
+/* COLORS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #4F4557;
+  color: #FFFFFF;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: min(100% - 3rem, 1220px);
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  color: #FFB742;
+  font-size: 2rem; /* 1rem = 16px */
+  font-weight: 700;
+}
+.header__menu {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  margin: 2rem;
+}
+.header__menu a {
+  font-size: 1.125rem; /* 1.125rem * 16px = 18px */
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.header__menu--active,
+.header__menu a:hover {
+  color: #FFB742;
+  border-bottom: 2px solid #FFB742;
+}
+
+.header__links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.header__links--active {
+  background-color: #393646;
+  padding: 0.3rem;
+  border-radius: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4rem;
+}
+.hero--bg {
+  background-image: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.hero__gretting {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.hero__gretting span {
+  color: #FFB742;
+  text-decoration-line: underline;
+}
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.hero__description {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.hero__photo {
+  border-radius: 100%;
+}
+
+.stack {
+  display: flex;
+  gap: 1.5rem;
+}
+.stack__title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.stack__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stack__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: #4F4557;
+  border-radius: 0.5rem;
+}/*# sourceMappingURL=styles.css.map */

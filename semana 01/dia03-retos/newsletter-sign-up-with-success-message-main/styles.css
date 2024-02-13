@@ -1,0 +1,33 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+
+  background-color: hsl(30, 38%, 92%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+main {
+  /* background-color: red; */
+
+  width: 650px;
+  min-height: 400px;
+
+  display: flex;
+}
+
+
+.photo {
+    width: 450px;
+    height: 450px;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    border-radius: 14px;
+  }
+  

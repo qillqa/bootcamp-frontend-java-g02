@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* comentario de múltiples líneas */
+:root {
+  --mi-variable: rgb(186, 201, 57);
+}
+
+/* VARIABLES */
+/* MIXINS */
+/* GENERAL */
+body {
+  background-color: #AADDEE;
+  background-color: var(--mi-variable);
+}
+
+/* CARD */
+.card {
+  background-color: #fff;
+  border: 1px solid #454545;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 5px solid orangered;
+  border: 4px solid pink;
+  border: 4px dashed pink;
+  /* NESTED PROPS */
+}
+.card__header {
+  padding: 1rem 1.5rem;
+}
+.card__body {
+  padding: 1rem 1.5rem;
+}
+.card--success {
+  background-color: green;
+}/*# sourceMappingURL=styles.css.map */

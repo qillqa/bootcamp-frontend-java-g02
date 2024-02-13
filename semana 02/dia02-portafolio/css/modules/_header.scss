@@ -1,0 +1,47 @@
+/* HEADER */
+
+.header {
+    // border: 1px solid red;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__logo {
+      color: $primary-color-gold;
+      font-size: 2rem; /* 1rem = 16px */
+      font-weight: $font-weight-bold;
+    }
+  
+    &__menu {
+      display: flex;
+      gap: 1.5rem;
+  
+      padding: .5rem;
+      margin: 2rem;
+    }
+  
+    &__menu a {
+      font-size: 1.125rem; /* 1.125rem * 16px = 18px */
+      font-weight: $font-weight-semibold;
+      text-transform: capitalize;
+    }
+  }
+  
+  .header__menu--active,
+  .header__menu a:hover {
+    color: $primary-color-gold;
+    border-bottom: 2px solid $primary-color-gold;
+  }
+  
+  .header__links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .header__links--active {
+    background-color: $primary-color-blue1;
+    padding: .3rem;
+    border-radius: 100%;
+  }

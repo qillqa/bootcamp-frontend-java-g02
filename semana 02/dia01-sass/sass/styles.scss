@@ -1,0 +1,74 @@
+// comentario de una línea
+
+/* comentario de múltiples líneas */
+
+:root {
+    // esta variable CSS pasa como variable
+    --mi-variable: rgb(186, 201, 57);
+  }
+  
+  /* VARIABLES */
+  
+  //estas variables SASS pasas a "CSS" como valores
+  $primary-color: #AADDEE;
+  
+  $card-bg: #fff;
+  $card-border-color: #454545;
+  $card-border-radius: 8px;
+  
+  /* MIXINS */
+  
+  @mixin my-default-border {
+    border: 5px solid orangered;
+  }
+  
+  @mixin custom-border ($width, $color, $is-solid: true) {
+    @if $is-solid {
+      // Se ejecuta si is-solid es true (verdadero)
+      border: $width solid $color;
+    } @else {
+      // Se ejecuta si is-solid es false (falso)
+      border: $width dashed $color;
+    }
+  }
+  
+  /* GENERAL */
+  
+  body {
+    background-color: $primary-color;
+    background-color: var(--mi-variable);
+  }
+  
+  /* CARD */
+  
+  .card {
+    background-color: $card-bg;
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    margin-bottom: 1rem;
+  
+    @include my-default-border;
+    @include custom-border(4px, pink);
+    @include custom-border(4px, pink, false);
+  
+    /* NESTED PROPS */
+    &__header {             //card__header
+      padding: 1rem 1.5rem;
+    }
+    
+    &__body {               //card__body
+      padding: 1rem 1.5rem;
+    }
+  
+    &--success {
+      background-color: green;
+    }
+  }
+  
+  // .card__header {
+  //   padding: 1rem 1.5rem;
+  // }
+  
+  // .card__body {
+  //   padding: 1rem 1.5rem;
+  // }

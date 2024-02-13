@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+// se puede llamar las variables "sin importar"
+html {
+    font-size: $font-size;
+}
+
+body {
+    font-family: $font-primary;
+
+    background-color: $primary-color-blue2;
+    color: $primary-color-white;
+}
+
+a {
+    color: inherit; // hereda del elemento mas cercano
+    text-decoration: none;
+}

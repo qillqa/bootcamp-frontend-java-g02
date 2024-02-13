@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto: Formulario de registro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    #titulounico {
+      color: red;
+    }
+  </style>  
+</head>
+<body>
+  <!-- TODO: Crear un formulario para crear un acuenta de usuario con los campos 
+    nombres, apellidos, email, telefono, password, confirmar password(caja de texto)
+    , si gustan pueden agregar más campos. Y un botón llamado registrarse. 
+    Opcionalmente pueden usar el framework PICO que vimos en clase. -->
+  <main class="container">
+    <form>
+      <img src="https://placehold.co/80.png?text={vv}" />
+      <hgroup>
+        <h1 id="titulounico">Registro de usuarios</h1>
+        <h2>Ingresa la siguiente información:</h2>
+      </hgroup>
+      <label>
+        Nombres
+        <input type="text" placeholder="Elías" required />
+      </label>
+      <label>
+        Apellidos
+        <input type="text" placeholder="Alarcón Alvarado" required />
+      </label>
+      <label>
+        Email
+        <input type="email" placeholder="user@gmail.com" required />
+      </label>
+      <label>
+        Telefono
+        <input type="text" placeholder="999999999" required />
+      </label>
+      <label>
+        Password
+        <input type="password" placeholder="Ingresa tu password" required minlength="6" />
+      </label>
+      <label>
+        Confirmar Password
+        <input type="password" placeholder="Ingresa tu password otra vez" required minlength="6" />
+      </label>
+
+      <input type="submit" value="Registrarse" />
+    </form>
+  </main>
+</body>
+</html>
