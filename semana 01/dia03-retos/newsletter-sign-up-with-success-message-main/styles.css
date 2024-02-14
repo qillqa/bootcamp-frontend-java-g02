@@ -1,8 +1,10 @@
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-  background-color: hsl(30, 38%, 92%);
+body {
+  font-family: 'Roboto';
+  font-size: 16px;
+
+  background-color: hsl(234, 29%, 20%);
 
   display: flex;
   justify-content: center;
@@ -12,22 +14,103 @@ body {
 }
 
 main {
-  /* background-color: red; */
+  /* border: 1px solid red; */
 
-  width: 650px;
-  min-height: 400px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 14px;
+
+  width: 680px;
+  min-height: 450px;
 
   display: flex;
 }
 
+.text {
+  /* border: 1px solid yellow; */
+  /* background-color: green; */
+  width: 300px;
+  height: 290px;
+
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-right: 45px;
+  margin-left: 45px;  
+}
 
 .photo {
-    width: 450px;
-    height: 450px;
-    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  /* border: 1px solid yellow; */
+  /* background-color: lime; */
+  width: 300px;
+  height: 450px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  margin-left: 0px;
+  padding: 0%;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   
-    border-radius: 14px;
-  }
+  border-radius: 14px;
+}
+
+h1 {
+  margin: 0%;
+  padding: 0%;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.text__item {
+  font-weight: 400;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
   
+}
+
+.text__p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.text__item__img {
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
+}
+
+.text__email {
+  padding-top: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+button {
+  border: 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(0, 0%, 100%);
+  padding: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+input {
+  border: 2px solid hsl(240, 7%, 89%);
+  font-family: 'Roboto';
+  font-weight: 400;
+  padding: 14px;
+  width: 89%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 7px;
+}
