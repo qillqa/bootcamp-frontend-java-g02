@@ -314,6 +314,9 @@ if (edadPersona >= 18) {
 //    - si es español mostrará 'Hola'
 //    - si es inglés mostrará 'Hello'
 //    - si es aimara mostrará 'kamisaraki'
+
+console.log("hola");
+
 // 3. Si un numero es divisible entre 3 y 5 devolver 'fizzbuzz'
 //    Si un numero es divisible entre 3 devolver 'fizz'
 //    Si un numero es divisible entre 5 devolver 'buzz'
