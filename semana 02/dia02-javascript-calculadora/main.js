@@ -2,7 +2,7 @@ console.log('Hola javascript')
 
 let numeroActual = '0'
 let operador = ''
-let operadorando = ''
+let operando = ''
 
 const inputDisplay = document.querySelector('.inputDisplay')
 const buttons = document.querySelectorAll('.button')
