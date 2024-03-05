@@ -85,7 +85,7 @@ export default function LoginPage() {
           </form>
 
           <div className="flex justify-center gap-2 font-bold">
-            <span>Don't have an account?</span> <Link href="/register" className="text-sky-500">Register</Link>
+            <span>Don&apos;t have an account?</span> <Link href="/register" className="text-sky-500">Register</Link>
           </div>
 
         </div>
