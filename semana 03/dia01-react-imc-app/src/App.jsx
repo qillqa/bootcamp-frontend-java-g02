@@ -31,7 +31,7 @@ const App = () => {
     } else if (bodyMassIndex >= 30) {
       result = 'Obeso'
     } else {
-      result = 'Datos icorrectos'
+      result = 'Datos incorrectos'
     }
 
     return result

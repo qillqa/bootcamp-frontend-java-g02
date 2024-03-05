@@ -1,0 +1,96 @@
+### registrar nuevo usuario
+POST https://mockmentor.4.us-1.fl0.io/auth/register
+Content-Type: application/json
+
+{
+    "firstname": "elias",
+    "lastname": "alarcon",
+    "email": "elias@alarcon.com",
+    "password": "elias"
+}
+
+
+### login
+POST https://mockmentor.4.us-1.fl0.io/auth/login
+Content-Type: application/json
+
+{
+    "email": "elias@alarcon.com",
+    "password": "elias"
+}
+### nos genera un token
+
+
+### recuperar el budget de un usuario que hizo login
+GET https://mockmentor.4.us-1.fl0.io/api/v1/budgets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+### el token se genera cuando se loguea
+
+
+### creamos un budget
+POST https://mockmentor.4.us-1.fl0.io/api/v1/budgets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+{
+    "amount": 0
+}
+
+
+### actualizamos un budget
+PUT https://mockmentor.4.us-1.fl0.io/api/v1/budgets/1958675d-0ab2-4847-96fe-9b33cd13aae6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+{
+    "amount": 5000
+}
+
+
+### Recuperar un budget por id
+GET https://mockmentor.4.us-1.fl0.io/api/v1/budgets/1958675d-0ab2-4847-96fe-9b33cd13aae6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+
+### Recuperamos todos los expenses de un usuario que hizo login
+GET https://mockmentor.4.us-1.fl0.io/api/v1/expenses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+
+### creamos un expense
+POST https://mockmentor.4.us-1.fl0.io/api/v1/expenses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+{
+    "name": "pago del curso 2",
+    "amount": 1000
+}
+
+
+### TODO: recuperar un expensive por su id
+GET https://mockmentor.4.us-1.fl0.io/api/v1/expenses/abfb37df-806a-4df8-8e64-a630400f33df
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+
+### TODO: actualizamos un expensive
+PUT https://mockmentor.4.us-1.fl0.io/api/v1/expenses/58a9014c-4e53-4b53-aefd-9e7618ae8674
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+{
+    "name": "pago del curso",
+    "amount": 9000
+}
+
+### TODO: eliminamos un expensive
+DELETE https://mockmentor.4.us-1.fl0.io/api/v1/expenses/abfb37df-806a-4df8-8e64-a630400f33df
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwNTFjMGE3My1mZWUzLTQyYmMtODQ4NC05MGQ3ZDVkOTE5NmUiLCJmaXJzdG5hbWUiOiJlbGlhcyIsImxhc3RuYW1lIjoiYWxhcmNvbiIsImlhdCI6MTcwOTE2Nzk3MCwiZXhwIjoxNzA5MTcxNTcwfQ.MyI89sDbwncTSdYM3UY-brwmpMRJAPmtXFUe2HP7plM
+
+
+

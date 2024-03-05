@@ -1,0 +1,84 @@
+### Registrar un nuevo usuario
+POST https://mockmentor.4.us-1.fl0.io/auth/register
+Content-Type: application/json
+
+{
+  "firstname": "elias",
+  "lastname": "Alarcon",
+  "email": "elias@alarcon.com",
+  "password": "elias"
+}
+
+### Login
+POST https://mockmentor.4.us-1.fl0.io/auth/login
+Content-Type: application/json
+
+{
+  "email": "avillazon@budgetapp.com",
+  "password": "Welcome@987"
+}
+
+
+### Recuperar los budgets de un usuario que hizo login
+GET https://mockmentor.4.us-1.fl0.io/api/v1/budgets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+### Creamos un budget
+POST https://mockmentor.4.us-1.fl0.io/api/v1/budgets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+{
+  "amount": 0
+}
+
+### Actualizamos un budget
+PUT https://mockmentor.4.us-1.fl0.io/api/v1/budgets/7642b5bb-d52c-449f-aae7-b99e4c162464
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+{
+  "amount": 55000
+}
+
+### Recuperar un budget por id
+GET https://mockmentor.4.us-1.fl0.io/api/v1/budgets/7642b5bb-d52c-449f-aae7-b99e4c162464
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+
+### Recuperamos todos los expenses de un usuario que hizo login
+GET https://mockmentor.4.us-1.fl0.io/api/v1/expenses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+### Creamos un expense
+POST https://mockmentor.4.us-1.fl0.io/api/v1/expenses
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+{
+  "name": "Pago del Cursos",
+  "amount": 1300
+}
+
+### Recuperar un expense por su id
+GET https://mockmentor.4.us-1.fl0.io/api/v1/expenses/cb2af9eb-cf9b-454d-a70a-ddff4727427e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+### Actualizamos un expense
+PUT https://mockmentor.4.us-1.fl0.io/api/v1/expenses/cb2af9eb-cf9b-454d-a70a-ddff4727427e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
+
+{
+  "name": "Pago de Cursos en Udemy",
+  "amount": 1500
+}
+
+### Eliminamos un expense
+DELETE https://mockmentor.4.us-1.fl0.io/api/v1/expenses/1bf5e246-cfc4-4099-a54f-7cae4b113a2d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJlYmJiZjJhNC1lMzMxLTQ2MDEtYmJkMS0zZWRkZmZmNDM5M2YiLCJmaXJzdG5hbWUiOiJBbG9uc28iLCJsYXN0bmFtZSI6IlZpbGxhesOzbiIsImlhdCI6MTcwOTE2NzgzMiwiZXhwIjoxNzA5MTcxNDMyfQ.T5ZDSgtAGevgKTjZZMS9c0yx1IZ5dn74meRMJcxtigk
